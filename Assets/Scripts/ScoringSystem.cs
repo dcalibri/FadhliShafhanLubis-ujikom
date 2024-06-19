@@ -18,7 +18,7 @@ public class ScoringSystem : MonoBehaviour
         score = 0;
     }
 
-    public void  Scoreadd(float scoreBerapa)
+    public void  AddScore(float scoreBerapa)
     {
         score += scoreBerapa;
     }
