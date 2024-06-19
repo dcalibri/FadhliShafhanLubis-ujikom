@@ -17,7 +17,7 @@ public class TimeSystem : MonoBehaviour
     void FixedUpdate()
     {
         Time-- ; //based on timerunitSystem
-
+        textTimer.text = Time.ToString();
         if (Time == 0)
         {
             onTimeOut.Invoke();

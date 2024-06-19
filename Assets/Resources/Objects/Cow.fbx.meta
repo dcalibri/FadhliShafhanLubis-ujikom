@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4b3cf8353ced51148982cf721c363fb1
+guid: 17ebb65de380b3347a7bd854e0fed04c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Run
-      takeName: Horse_Rig_SHJntGrp|Horse_Rig_SHJntGrp|Take 001|BaseLayer.001
-      internalID: 8425542160673139225
-      firstFrame: 5
-      lastFrame: 25
+      name: Walk
+      takeName: CowRig_SHJntGrp|CowRig_SHJntGrp|Take 001|BaseLayer
+      internalID: 2579135994432767182
+      firstFrame: 130
+      lastFrame: 170
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -64,7 +64,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 5
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -119,7 +119,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 100
+    globalScale: 0.049999997
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

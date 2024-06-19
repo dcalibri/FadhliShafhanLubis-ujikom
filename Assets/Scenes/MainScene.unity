@@ -246,7 +246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &56865586
 RectTransform:
   m_ObjectHideFlags: 0
@@ -956,11 +956,11 @@ Transform:
   m_GameObject: {fileID: 577529574}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5599351, y: -0.001990694, z: 0.001345464, w: -0.82853305}
-  m_LocalPosition: {x: 0.12060851, y: 6.55, z: 0.114545345}
+  m_LocalPosition: {x: 0.09833275, y: 7.3, z: -3.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1929244309}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 55.727, y: 180, z: 0}
 --- !u!95 &577529578
 Animator:
@@ -1008,7 +1008,7 @@ Transform:
   m_GameObject: {fileID: 604735479}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5.7}
+  m_LocalPosition: {x: 0, y: 0, z: 6.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1780,7 +1780,7 @@ Transform:
   m_GameObject: {fileID: 1877924001}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5.7}
+  m_LocalPosition: {x: 0, y: 0, z: 6.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1819,7 +1819,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 577529577}
   - {fileID: 2014008107}
   - {fileID: 392200972}
   m_Father: {fileID: 0}
@@ -1877,7 +1876,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.67, z: 0}
 --- !u!143 &1929244313
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1897,13 +1896,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
+  m_Height: 1.85
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.87, z: 0}
 --- !u!1001 &2014008106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2167,3 +2166,4 @@ SceneRoots:
   - {fileID: 766194070}
   - {fileID: 156770248}
   - {fileID: 1929244309}
+  - {fileID: 577529577}
