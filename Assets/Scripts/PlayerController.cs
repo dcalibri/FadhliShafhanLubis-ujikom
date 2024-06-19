@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
     public float speed = 5;
     private CharacterController characterController;
 
     public Animator animator;
 
+    public bool isEnableMove = true;
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -18,33 +20,41 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Vector3 movement;
-       
-        float inputHorizontal = speed * Input.GetAxis("Horizontal") * Time.deltaTime;
-
-
-        Vector3 right = transform.right;
-
-
-        movement = right * inputHorizontal;
-
-
-        characterController.Move(movement);
-
-        if (inputHorizontal == 0)
+       if (isEnableMove)
         {
-            animator.SetBool("Ismoving", false);
-        }
+            Vector3 movement;
 
-        else if (inputHorizontal < 0)
-        {
-            animator.SetBool("Ismoving", true);
+            float inputHorizontal = speed * Input.GetAxis("Horizontal") * Time.deltaTime;
 
-            animator.SetFloat("float_moveHorizontal", inputHorizontal);
+
+            Vector3 right = transform.right;
+
+
+            movement = right * inputHorizontal;
+
+
+
+            characterController.Move(movement);
+
+            if (inputHorizontal == 0)
+            {
+                animator.SetBool("Ismoving", false);
+            }
+
+            else if (inputHorizontal < 0)
+            {
+                animator.SetBool("Ismoving", true);
+
+                animator.SetFloat("float_moveHorizontal", inputHorizontal);
+            }
         }
     }
 
-
+   public void gameEnd()
+    {
+        isEnableMove = false;
+        animator.SetTrigger("GameOver");
+    }
 }
     
 

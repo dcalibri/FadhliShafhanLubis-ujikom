@@ -8,7 +8,7 @@ public class ShotSystem : MonoBehaviour
 
     public float nextFire = 0.0f;
 
-    public float speed = 4;
+    public float speed = 300f;
 
     public Transform fireSpawn;
 
@@ -22,7 +22,7 @@ public class ShotSystem : MonoBehaviour
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
             Rigidbody theProjectile = Instantiate(projectile, fireSpawn.transform.position, fireSpawn.transform.rotation);
-            theProjectile.velocity = transform.forward * speed;
+            theProjectile.velocity = transform.forward * speed/60f;
         }
     }
 }
